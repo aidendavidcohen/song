@@ -41,13 +41,13 @@ START = false;
 console.log("i got here")
 function setup(){
 mincolor = random(70,155);
-        width = windowWidth - 20;
+        width = windowWidth - 40;
 createCanvas(width,height);
-frameRate(520);
+frameRate(1000);
 background(0);
-r = random(1,256);
-g = random(1,256);
-b = random(1,256);
+r = random(70,256);
+g = random(70,256);
+b = random(70,256);
 }
 function draw(){
 if(START){
