@@ -7,14 +7,21 @@
 <p style="text-align:center;font-family:'Quicksand Medium'"><font color="#b0ffee" size= 7><b>My Best Friend Todd<br>
 Written by AC and JSC<br></b></font>
 <font color="#f0b31a" size= 6><b>Me and my best friend Todd<br>
+<div id="topa"></div>
 We eatin' some shrimp and cod<br>
+<div id="topb"></div>
 We thinkin' about life and god<br>
+<div id="topc"></div>
 <br>
 <br>
 He's spittin' out rhyme and reason<br>
+<div id="topd"></div>
 I'm spoutin' out hits all season<br>
+<div id="tope"></div>
 We're seedin' the truth youre needin'<br>
+<div id="topf"></div>
 Uhoh<br>
+<div id="topg"></div>
 <br>
 <br>
 You laughin' at Woody Allen<br>
@@ -91,11 +98,30 @@ Let it flow Here we go Let's bounce We good<br>
 <br>
 <br>
 <script>
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+</script>
+<script>
 function gotop(){
+	document.getElementById("topg").scrollIntoView();
+	sleep(10)
+	document.getElementById("topf").scrollIntoView();
+	sleep(10)
+	document.getElementById("tope").scrollIntoView();
+	sleep(10)
+	document.getElementById("topd").scrollIntoView();
+	sleep(10)
+	document.getElementById("topc").scrollIntoView();
+	sleep(10)
+	document.getElementById("topb").scrollIntoView();
+	sleep(10)
+	document.getElementById("topa").scrollIntoView();
+	sleep(10)
 	document.getElementById("top").scrollIntoView();
 }
 </script>
-<button onclick = "gotop()">Go to top</button>
+<button onclick = "gotop()">Scroll to Top</button>
 </body>
 </html>
 
