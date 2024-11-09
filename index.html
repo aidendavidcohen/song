@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html>
-<title>My Best Friend Todd</title>
-<body style="background-image:'images.jpg';background-attachment:fixed">
-<script>
-function scrollTo(c,e,d){d||(d=easeOutCuaic);
-var a=document.documentElement;
-if(0===a.scrollTop){var b=a.scrollTop;
-++a.scrollTop;a=b+1===a.scrollTop--?a:document.body}
-b=a.scrollTop;0>=e||("object"===typeof b&&(b=b.offsetTop),
-"object"===typeof c&&(c=c.offsetTop),function(a,b,c,f,d,e,h){
-function g(){0>f||1<f||0>=d?a.scrollTop=c:(a.scrollTop=b-(b-c)*h(f),
-f+=d*e,setTimeout(g,e))}g()}(a,b,c,0,1/e,20,d))};
-function easeOutCuaic(t){t--;return t*t*t+1;}
-function gotop(){
-	document.getElementById("top").scrollIntoView(
-		{behavior: 'smooth'}
-	);
-}
-function godown(){
-	scrollTo(document.getElementById("gototop"), 10000);
-}
-</script>
-<button id="top" onclick="godown()" style="position:absolute;top:5rem;left:50%;transform(-50%,-50%)">Scroll to bottom</button>
-<p style="text-align:center;font-family:'Quicksand Medium'"><font color="#b0ffee" size= 7><b>My Best Friend Todd<br>
-Written by AC and JSC<br></b></font>
-<font color="#f0b31a" size= 6><b>Me and my best friend Todd<br>
-We eatin' some shrimp and cod<br>
-We thinkin' about life and god<br>
-<br>
-<br>
-He's spittin' out rhyme and reason<br>
-I'm spoutin' out hits all season<br>
-We're seedin' the truth youre needin'<br>
-Uhoh<br>
-<br>
-<br>
-You laughin' at Woody Allen<br>
-While I study Hoodie Allen<br>
-To unlock my secret talent<br>
-While I balence all the things that are gonna happen<br>
-<br>
-<br>
-My rhymes are grand master level<br>
-Hall of fame in my name<br>
-All base no treble<br>
-Super bowl ring mad bling cha chinga ching ching<br>
-My phone goes ring ringa ringa ring ring<br>
-<br>
-<br>
-Hero of the folk lore<br>
-Leader on the leader board<br>
-I step out the crowd goes roar<br>
-Screamin' from behind the door<br>
-I give 'em some they want some more<br>
-It's metta like a metaphore<br>
-<br>
-<br>
-I'm not perfect but I'm perfectly good<br>
-Rhymes flow here I go<br>
-From the burbs to 'da hood<br>
-Gather 'round<br>
-Here's the sound no bounds so good<br>
-Let it flow Here we go Let's bounce all good<br>
-<br>
-<br>
-Stayin' up late late<br>
-Not clickin' on the click bait<br>
-Going on a hot date<br>
-Haters 'gonna hate hate<br>
-But I'm feelin' great great<br>
-<br>
-<br>
-This is how I do it<br>
-I don't care because I'm fluent<br>
-In one hundred languages<br>
-I know your love languages<br>
-Rhymes are what I'm brandishin'<br>
-Competition vanishin'<br>
-I'm landin' big while you languishin'<br>
-<br>
-<br>
-We crash the party<br>
-Like Spencer and Barney<br>
-While you stoned I blarney<br>
-Let's crank the Bob Marley<br>
-<br>
-<br>
-Turn your hearin' aid up past sixty four<br>
-Cause we annunciate Don't hate<br>
-If you can't here past the roar<br>
-<br>
-<br>
-I don't need any help<br>
-Just 'gonna be myself<br>
-Lookin' back at the picture shelf<br>
-Wondering if could do better<br>
-<br>
-<br>
-I'm not perfect but I'm perfectly good<br>
-Rhymes flow here I go<br>
-From the burbs to 'da hood<br>
-Gather 'round<br>
-Here's the sound no bounds so good<br>
-Let it flow Here we go Let's bounce We good<br>
-<br>
-<a href="https://is.gd/rrandrew">Fun</a><br></b></font></p>
-<br>
-<br>
-<br>
-<button id="gototop" onclick = "gotop()">Scroll to Top</button>
+<head>
+    <title>My Best Friend Todd</title>
+    <style>
+        body {
+            background-image: url('images.jpg');
+            background-attachment: fixed;
+			overscroll-behavior: none
+        }
+    </style>
+</head>
+<body>
+    <script>
+		function scrollTo(c,e,d){d=d||easeOutCubic;var a=document.documentElement;if(0===a.scrollTop){var b=a.scrollTop;++a.scrollTop;a=b+1===a.scrollTop--?a:document.body}b=a.scrollTop;if(e>0){if(typeof b==="object")b=b.offsetTop;if(typeof c==="object")c=c.offsetTop;(function(a,b,c,f,d,e,h){function g(){if(f<0||f>1||d<=0){a.scrollTop=c}else{a.scrollTop=b-(b-c)*h(f);f+=d*e;setTimeout(g,e)}}g()})(a,b,c,0,1/e,20,d)}}function easeOutCubic(t){t--;return t*t*t+1}
+
+        function gotop() {
+            document.body.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function godown() {
+            scrollTo(document.getElementById("gototop"), 120000);
+        }
+    </script>
+    <button id="top" onclick="godown()" style="margin: 5rem auto 2rem; display: block">Scroll to bottom</button>
+    <p style="text-align:center;font-family:'Quicksand Medium'"><font color="#b0ffee" size= 7><b>My Best Friend Todd<br>
+    Written by AC and JSC<br></b></font>
+    <font color="#f0b31a" size= 6><b>Me and my best friend Todd<br>
+    We eatin' some shrimp and cod<br>
+    We thinkin' about life and god<br>
+    <br>
+    <br>
+    He's spittin' out rhyme and reason<br>
+    I'm spoutin' out hits all season<br>
+    We're seedin' the truth youre needin'<br>
+    Uhoh<br>
+    <br>
+    <br>
+    You laughin' at Woody Allen<br>
+    While I study Hoodie Allen<br>
+    To unlock my secret talent<br>
+    While I balence all the things that are gonna happen<br>
+    <br>
+    <br>
+    My rhymes are grand master level<br>
+    Hall of fame in my name<br>
+    All base no treble<br>
+    Super bowl ring mad bling cha chinga ching ching<br>
+    My phone goes ring ringa ringa ring ring<br>
+    <br>
+    <br>
+    Hero of the folk lore<br>
+    Leader on the leader board<br>
+    I step out the crowd goes roar<br>
+    Screamin' from behind the door<br>
+    I give 'em some they want some more<br>
+    It's metta like a metaphore<br>
+    <br>
+    <br>
+    I'm not perfect but I'm perfectly good<br>
+    Rhymes flow here I go<br>
+    From the burbs to 'da hood<br>
+    Gather 'round<br>
+    Here's the sound no bounds so good<br>
+    Let it flow Here we go Let's bounce all good<br>
+    <br>
+    <br>
+    Stayin' up late late<br>
+    Not clickin' on the click bait<br>
+    Going on a hot date<br>
+    Haters 'gonna hate hate<br>
+    But I'm feelin' great great<br>
+    <br>
+    <br>
+    This is how I do it<br>
+    I don't care because I'm fluent<br>
+    In one hundred languages<br>
+    I know your love languages<br>
+    Rhymes are what I'm brandishin'<br>
+    Competition vanishin'<br>
+    I'm landin' big while you languishin'<br>
+    <br>
+    <br>
+    We crash the party<br>
+    Like Spencer and Barney<br>
+    While you stoned I blarney<br>
+    Let's crank the Bob Marley<br>
+    <br>
+    <br>
+    Turn your hearin' aid up past sixty four<br>
+    Cause we annunciate Don't hate<br>
+    If you can't here past the roar<br>
+    <br>
+    <br>
+    I don't need any help<br>
+    Just 'gonna be myself<br>
+    Lookin' back at the picture shelf<br>
+    Wondering if could do better<br>
+    <br>
+    <br>
+    I'm not perfect but I'm perfectly good<br>
+    Rhymes flow here I go<br>
+    From the burbs to 'da hood<br>
+    Gather 'round<br>
+    Here's the sound no bounds so good<br>
+    Let it flow Here we go Let's bounce We good<br>
+    <br>
+    <a href="https://is.gd/rrandrew">Fun</a><br></b></font></p>
+    <button id="gototop" style="margin: 2rem auto 10rem; display: block" onclick = "gotop()">Scroll to Top</button>
 </body>
 </html>
 
