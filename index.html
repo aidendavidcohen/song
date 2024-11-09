@@ -92,7 +92,9 @@ Let it flow Here we go Let's bounce We good<br>
 <br>
 <script>
 function gotop(){
-	document.getElementById("top").scrollIntoView();
+	document.getElementById("top").scrollIntoView(
+		{behavior: 'smooth'}
+	);
 }
 </script>
 <button onclick = "gotop()">Scroll to Top</button>
